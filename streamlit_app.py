@@ -50,10 +50,7 @@ my_data_row = my_cur.fetchone()
 my_cur.execute("select * from fruit_load_list")
 my_data_rows = my_cur.fetchall()
 
-add_my_fruit = streamlit.text_input('add fruits','Kiwi')
-streamlit.write('The user entered ', add_my_fruit)
 
-my_cur.execute("insert into fruit_load values ('from streamlit')")
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_row)
 
