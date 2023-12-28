@@ -25,6 +25,13 @@ streamlit.text(fruityvice_response)
 
 streamlit.header("Fruityvice Fruit Advice!")
 
+
+# for adding banana
+fruityvice_response_banana = requests.get("https://fruityvice.com/api/fruit/banana")
+streamlit.text(fruityvice_response_banana)
+
+streamlit.header("Fruityvice Fruit Advice! banana added")
+
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
