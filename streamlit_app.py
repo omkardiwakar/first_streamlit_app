@@ -20,17 +20,17 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 import requests
-# fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-# streamlit.text(fruityvice_response)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/banana")
+streamlit.text(fruityvice_response)
 
-# streamlit.header("Fruityvice Fruit Advice!")
+streamlit.header("Fruityvice Fruit Advice!")
 
 
 # for adding banana
-fruityvice_response_banana = requests.get("https://fruityvice.com/api/fruit/banana")
-streamlit.text(fruityvice_response_banana)
+# fruityvice_response_banana = requests.get("https://fruityvice.com/api/fruit/banana")
+# streamlit.text(fruityvice_response_banana)
 
-streamlit.header("Fruityvice Fruit Advice! banana added")
+# streamlit.header("Fruityvice Fruit Advice! banana added")
 
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
