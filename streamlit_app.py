@@ -76,7 +76,7 @@ def get_fruit_load_list():
 
 def insert_row_snowflake(new_fruit):
      with my_cnx.cursor() as my_cur:
-        my_cur.execute("insert into fruit_load_list values (' " + 'Fruityvice Api to Snowflake' + " ')")
+        my_cur.execute("insert into fruit_load_list values (' " + '1FAIpQLScpE6J5pTTV2_NcHjBjlWbSUqF7VWkfFMIjxF00Tlnu8QD4FA' + " ')")
         return "Thanks for adding" + new_fruit
 
 
